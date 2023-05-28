@@ -16,6 +16,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Java Cheatsheet
 > Table of Contents
 - How Java works?
+- Variables
 
 
 
