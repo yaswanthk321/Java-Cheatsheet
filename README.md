@@ -18,6 +18,6 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - How Java works?
 - Variables
 - Data types
-
+- literals
 
 
