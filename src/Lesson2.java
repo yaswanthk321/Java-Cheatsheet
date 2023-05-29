@@ -1,6 +1,5 @@
 /*  variable is place for storing data
     java is strongly typed language
-    each varibale should have name
     first we have to declare the type and then variable name
 */
 public class Lesson2 {

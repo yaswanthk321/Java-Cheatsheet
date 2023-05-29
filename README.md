@@ -19,5 +19,6 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Variables
 - Data types
 - literals
+- type conversion and casting
 
 
