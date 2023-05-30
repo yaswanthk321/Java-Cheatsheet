@@ -20,5 +20,6 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Data types
 - literals
 - type conversion and casting
+- Assignment operator
 
 
