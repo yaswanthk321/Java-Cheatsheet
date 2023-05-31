@@ -15,16 +15,17 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 ## Java Cheatsheet
 > Table of Contents
-- How Java works?
-- Variables
-- Data types
-- literals
-- type conversion and casting
-- Assignment operator
-- Relational operator
-- logical operator
-- conditional operator if-else
-- conditional operator if-elseif-else
+- Lesson 1 : How Java works?
+- Lesson 2 : Variables
+- Lesson 3 : Data types
+- Lesson 4 : literals
+- Lesson 5 : type conversion and casting
+- Lesson 6 : Assignment operator
+- Lesson 7 : Relational operator
+- Lesson 8 : logical operator
+- Lesson 9 : conditional operator if-else
+- Lesson 10 : conditional operator if-elseif-else
+- Lesson 11 :ternary operator
 
 
 
