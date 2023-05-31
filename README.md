@@ -21,5 +21,10 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - literals
 - type conversion and casting
 - Assignment operator
+- Relational operator
+- logical operator
+- conditional operator if-else
+- conditional operator if-elseif-else
+
 
 
