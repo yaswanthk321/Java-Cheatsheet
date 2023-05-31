@@ -30,16 +30,16 @@ primitive data types is four types
 
 public class Lesson3 {
     public static void main(String[] args) {
-        int num = 3;
-        byte by = 127;
-        short sh = 558;
-        long l = 58541;
+        // int num = 3;
+        // byte by = 127;
+        // short sh = 558;
+        // long l = 58541;
 
-        float f = 5.8f;
-        double d = 5.8;
+        // float f = 5.8f;
+        // double d = 5.8;
 
-        char c = 'k';
-        char k = '8';
-        boolean b = true;
+        // char c = 'k';
+        // char k = '8';
+        // boolean b = true;
     }
 }

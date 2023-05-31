@@ -26,6 +26,6 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Lesson 9 : conditional operator if-else
 - Lesson 10 : conditional operator if-elseif-else
 - Lesson 11 :ternary operator
-
+- Lesson 12: Switch case
 
 
