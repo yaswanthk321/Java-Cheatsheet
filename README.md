@@ -29,4 +29,5 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Lesson 12: Switch case
 - Lesson 13: while loops
 - Lesson 14: do while 
+- Lesson 15: for loop
 
