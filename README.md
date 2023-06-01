@@ -30,4 +30,8 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Lesson 13: while loops
 - Lesson 14: do while 
 - Lesson 15: for loop
+- Lesson 16: Classes and object
+- Lesson 17: Method
+- Lesson 18: Method overloading
+
 
