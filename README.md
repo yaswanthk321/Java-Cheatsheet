@@ -33,5 +33,5 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Lesson 16: Classes and object
 - Lesson 17: Method
 - Lesson 18: Method overloading
-
+- Lesson 19: Array
 
