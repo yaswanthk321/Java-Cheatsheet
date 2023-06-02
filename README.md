@@ -36,3 +36,4 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Lesson 19 : Array
 - Lesson 20 : Multi dimentional array
 - Lesson 21 : Jagged and 3D Array
+- Lesson 22 : Array of Objects
