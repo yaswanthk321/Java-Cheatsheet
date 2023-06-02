@@ -15,23 +15,24 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 ## Java Cheatsheet
 > Table of Contents
-- Lesson 1 : How Java works?
-- Lesson 2 : Variables
-- Lesson 3 : Data types
-- Lesson 4 : literals
-- Lesson 5 : type conversion and casting
-- Lesson 6 : Assignment operator
-- Lesson 7 : Relational operator
-- Lesson 8 : logical operator
-- Lesson 9 : conditional operator if-else
+- Lesson 1  : How Java works?
+- Lesson 2  : Variables
+- Lesson 3  : Data types
+- Lesson 4  : literals
+- Lesson 5  : type conversion and casting
+- Lesson 6  : Assignment operator
+- Lesson 7  : Relational operator
+- Lesson 8  : logical operator
+- Lesson 9  : conditional operator if-else
 - Lesson 10 : conditional operator if-elseif-else
-- Lesson 11 :ternary operator
-- Lesson 12: Switch case
-- Lesson 13: while loops
-- Lesson 14: do while 
-- Lesson 15: for loop
-- Lesson 16: Classes and object
-- Lesson 17: Method
-- Lesson 18: Method overloading
-- Lesson 19: Array
+- Lesson 11 : ternary operator
+- Lesson 12 : Switch case
+- Lesson 13 : while loops
+- Lesson 14 : do while 
+- Lesson 15 : for loop
+- Lesson 16 : Classes and object
+- Lesson 17 : Method
+- Lesson 18 : Method overloading
+- Lesson 19 : Array
+- Lesson 20 : Multi dimentional array
 
