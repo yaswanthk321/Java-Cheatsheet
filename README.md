@@ -34,3 +34,4 @@
 - Lesson 32 : Polymorphism & dynamic method dispatch
 - Lesson 33 : final keyword
 - Lesson 34 : Object class - equals(), toString() , hashCode()
+- Lesson 35 : Upcasting & Downcasting
