@@ -41,3 +41,4 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Lesson 24 : StringBuffer & StringBuilder
 - Lesson 25 : static variable
 - Lesson 26 : static block
+- Lesson 27 : static method
