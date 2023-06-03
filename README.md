@@ -31,4 +31,6 @@
 - Lesson 29 : super() , this() and anonymous object
 - Lesson 30 : Inheritance , single inheritance, multilevel inheritance , method overriding
 - Lesson 31 : Packages , access modifier(https://www.geeksforgeeks.org/access-modifiers-java/)
-- Lesson 32 : 
+- Lesson 32 : Polymorphism & dynamic method dispatch
+- Lesson 33 : final keyword
+- Lesson 34 : Object class - equals(), toString() , hashCode()
