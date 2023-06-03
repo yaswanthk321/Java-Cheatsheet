@@ -1,18 +1,3 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
 ## Java Cheatsheet
 > Table of Contents
 - Lesson 1  : How Java works?
@@ -42,3 +27,8 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Lesson 25 : static variable
 - Lesson 26 : static block
 - Lesson 27 : static method
+- Lesson 28 : Encapsulation , getters & setters , this keyword , Constructor , default & parametrized constructor
+- Lesson 29 : super() , this() and anonymous object
+- Lesson 30 : Inheritance , single inheritance, multilevel inheritance , method overriding
+- Lesson 31 : Packages , access modifier(https://www.geeksforgeeks.org/access-modifiers-java/)
+- Lesson 32 : 
