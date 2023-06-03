@@ -39,3 +39,4 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 - Lesson 22 : Array of Objects
 - Lesson 23 : Strings
 - Lesson 24 : StringBuffer & StringBuilder
+- Lesson 25 : static variable
