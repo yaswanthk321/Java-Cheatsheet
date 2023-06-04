@@ -39,3 +39,9 @@
 - Lesson 37 : abstract class and methods
 - Lesson 38 : Inner class & anonymous inner class
 - Lesson 39 : Anonymous and abstract inner class
+- Lesson 40 : interface
+- Lesson 41 : enum if else and switch
+- Lesson 42 : Anotations , Functional interface and lambda expression with return type,
+- Lesson 43 : Exceptions , try catch blocks
+- Lesson 44 : throw 
+- Lesson 45 : throws
