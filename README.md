@@ -45,3 +45,11 @@
 - Lesson 43 : Exceptions , try catch blocks
 - Lesson 44 : throw 
 - Lesson 45 : throws
+- Lesson 46 : BufferedReader and Scanner , try with resources
+- Lesson 47 : Thread class
+- Lesson 48 : Runnable interface
+- Lesson 49 : race condition
+- Lesson 50 : Collection , List - ArrayList , Set - HashSet
+- Lesson 51 : Map - HashMap, HashTable
+- Lesson 52 : Comparator & Comparable 
+- Lesson 53 : stream api , forEach , map , filter , reduce
