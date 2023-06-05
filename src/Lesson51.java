@@ -11,11 +11,12 @@ public class Lesson51 {
         students.put("harini", 77);
         students.put("siva", 97);
 
+        System.out.println(students);
         // will give array of keys
-        System.out.println(students.keySet());
+        // System.out.println(students.keySet());
 
-        for (String val : students.keySet()) {
-            System.out.println(students.get(val));
-        }
+        // for (String val : students.keySet()) {
+        // System.out.println(students.get(val));
+        // }
     }
 }
