@@ -88,7 +88,7 @@ The one thing that the machine requires to run a java code is a JVM.
 - In Java, execution always starts from the main method.
 Signature of main method:
 
-    ```java
+    ```javascript
     public static void main(String args[]) 
     ```
 
@@ -255,7 +255,7 @@ for real number by default double
 
 - Underscore use as literal to separate digit 
 
-    ```java
+    ```javascript
     int num = 1_000_000; 
     int num = 3_45_78; 
     int num = 0b1010_1010;
