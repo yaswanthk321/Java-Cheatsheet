@@ -114,7 +114,7 @@ Signature of main method:
 
 <br/>
 
-# 2. Variables:-
+# 2. Variables
 - Variable is used to store the data temporarily while processing.
 - Variable is a type of box in which you store data and a type is attached to it such as type can be number, text, image, etc. Thus, a box is known as a variable and a name and value are present with it.
 - A variable is a container that holds the value while the Java program is executed.
