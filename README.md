@@ -374,67 +374,93 @@ byte * byte = int
 
 # 6. Assignment operator
 
- -- there are many but in this lecture we discussing only some 
+there are many but in this lecture we discussing only some 
 
- e.g of =
-        int num1=11;
-        int num2=12;
+```java
+        int num1 = 11;
+        int num2 = 12;
         int result = num1 + num2;
-        int result1=num1-num2;
-        int result2=num1*num2;
-        int result3=num1/num2;
-e.g of +=
-int num=1;
-num +=1; =  num = num+1;
-num +=5; = num = num+5;
+        int result1 = num1 - num2;
+        int result2 = num1 * num2;
+        int result3 = num1 / num2;
 
-e.g of -=
-int num2=2;
-num -=1; num =num-1;
-num -=5; num =num-5;
 
-2)increment and decrement operator
- -- there are two type of increment and decrement operator
+        int num = 1;
+        num += 1; 
+        num = num + 1;
+        num += 5;
+        num = num + 5;
+
+
+        int num2 = 2;
+        num -= 1; 
+        num = num - 1;
+        num -= 5; 
+        num = num - 5;
+```
+
+increment and decrement operator
+there are two type of increment and decrement operator
  a) pre 
  b) post
 
--- post increment and decrement operator
- int num=1;
- num++; 
- System.out.println(num); // 2
- -- this operator is known as post increment operator
+post increment and decrement operator
 
- num--;
- System.out.println(num); //1
- -- this operator is know  as post decrement operator 
+```java
+    int num=1;
+    num++; 
+    System.out.println(num); // 2
+```
 
--- pre increment and decrement operator
- int num=2;
- ++num; 
- System.out.println(num);//3
+this operator is known as post increment operator
 
- --num;
- System.out.println(num);//2
+```java
+    num--;
+    System.out.println(num); //1
+ ```
+
+this operator is know  as post decrement operator 
+pre increment and decrement operator
+
+```java
+    int num=2;
+    ++num; 
+    System.out.println(num);//3
+
+    --num;
+    System.out.println(num);//2
+```
+
 
 Difference between pre and post operator
+
 e.g for that we take one example
-int num=5;
-System.out.println(num++); // 5 is print on console
 
-int  num1=5;
-System.out.println(++num); //6 is printed on screen 
+```java
+    int num = 5;
+    System.out.println( num++ ); // 5 is print on console
 
-in post 
-first assignment and then increment
-e.g int num=5; int copy;
-copy=num++; in this case first num=5 assign to copy then increment the num
-copy value is 5;
+    int  num1=5;
+    System.out.println( ++num ); //6 is printed on screen 
+```
 
-in pre 
-first increment then assignment
-e.g int num=5;
-int copy;
-copy = ++num;
+```java
+
+//in post 
+//first assignment and then increment
+
+    int num = 5; 
+    int copy;
+    copy = num++;  // in this case first num=5 assign to copy then increment the num
+    //copy value is 5;
+
+    //in pre 
+    //first increment then assignment
+
+     int num = 5;
+     int copy;
+     copy = ++num;
+```
 
 in this case first increment num value from 5 to 6 then assign to copy.
 copy value is 6;
