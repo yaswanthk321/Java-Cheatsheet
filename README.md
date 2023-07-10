@@ -474,11 +474,11 @@ copy value is 6;
 # 7. Relational operator
 
 Relational operators are used where we need to compare things. 
-- We can use less than, greater than or also compare two values like they are equal or not.
-- In Java, equal to (=) is an assignment operator that is used to assign values.
+We can use less than, greater than or also compare two values like they are equal or not.
+In Java, equal to (=) is an assignment operator that is used to assign values.
  x=5   ( here, we are assigning the value 5 to the variable x).
-- Double equal to (==) is used to compare two values.
-- If we have to check the values are not equal, then we use not equal to an operator (!=). 
+Double equal to (==) is used to compare two values.
+If we have to check the values are not equal, then we use not equal to an operator (!=). 
 
 Relational Operators:-
 less than 
@@ -488,8 +488,8 @@ not equal to
 less than equal to 
 greater than equal to 
 
-- Relational operators return a boolean result after the comparison.
-- They are mostly used in looping and conditional statements.
+Relational operators return a boolean result after the comparison.
+They are mostly used in looping and conditional statements.
 
 <br/>
 
@@ -500,32 +500,31 @@ greater than equal to
 # 8. logical operator
 
 If we need to combine the result of two or more relational operators, then we use logical operators.
-- We use logical operator in between two or more results of relational operators.
-- AND operator (&&), OR operator (||) and Not operator (!) are logical operators.
+We use logical operator in between two or more results of relational operators.
+AND operator (&&), OR operator (||) and Not operator (!) are logical operators.
 
 1) In case of AND Operator:
-- If both are true - true
-- If one is true and other is false - false
-- If one is false and other is true - false
-- If both are false - false
- * If first condition is false then it will not check for the another one and it will increase the execution time.
+    - If both are true - true
+    - If one is true and other is false - false
+    - If one is false and other is true - false
+    - If both are false - false
+If first condition is false then it will not check for the another one and it will increase the execution time.
 Thus, because of its less time it is known as short- circuit.
 
 2) In case of OR Operator:
-- If both are true - true
-- If one is true and other is false - true
-- If one is false and other is true - true
-- If both are false - false
- * If first condition is true then it will not check for the another one and it will increase the execution time.
+    - If both are true - true
+    - If one is true and other is false - true
+    - If one is false and other is true - true
+    - If both are false - false
+    - If first condition is true then it will not check for the another one and it will increase the execution time.
 Thus, because of its less time it is known as short- circuit.
 
 3) In case of Not Operator:
-- It is basically used to reverse the things.
-It means if result is false, it will do true.
-If the result is true, it will do false.
-* Not operator just do the opposite.
-
-- We can use as much logical operators as we want in between the relational operations.
+    - It is basically used to reverse the things.
+    It means if result is false, it will do true.
+    If the result is true, it will do false.
+    Not operator just do the opposite.
+    - We can use as much logical operators as we want in between the relational operations.
 
 
 <br/>
