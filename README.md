@@ -536,22 +536,19 @@ Thus, because of its less time it is known as short- circuit.
 
 # 9. conditional operator if-else
 
-#1
--- conditional statement is a statement that can be true or false.
--- suppose if ask student is pass. (answer yes or no)
--- this type of statement of statement is conditional statement.
-
-#2
-In this part we are only discussing about if-else and 
+- conditional statement is a statement that can be true or false.
+- suppose if ask student is pass. (answer yes or no)
+- this type of statement of statement is conditional statement.
+- In this part we are only discussing about if-else and 
 in next lecture we are discussing if-else-if ladder, ternary operator and switch statement.
+- syntax of if-else
+    - condition is either true or false after evaluation 
+    - remember like c and c++, we cannot use number directly as condition of if-else
+    - if(5) -- not allowed in java 
+    - you get Type mismatch: cannot convert from int to boolean
 
-#3
-syntax of if-else
+```java
 
--- condition is either true or false after evaluation 
--- remember like c and c++, we cannot use number directly as condition of if-else
-- if(5) -- not allowed in java 
--- you get Type mismatch: cannot convert from int to boolean
 if(condition) 
 {
     //code 
@@ -564,9 +561,12 @@ else
     //or this part execute
 }
 
-#4
-example:
-if want to check a given number is even or odd then;
+```
+
+- if want to check a given number is even or odd then;
+
+```java
+
 int num=13;
 if(num%2==0)
 System.out.println("Even"); //here we not use  braces for single statement {}
@@ -574,6 +574,7 @@ System.out.println("Even"); //here we not use  braces for single statement {}
 else
 System.out.println("Odd");  // here we not use braces {}
 
+```
 Note: for single statement braces is not required  but for multiple statement it is required.
 
 <br/>
@@ -584,13 +585,14 @@ Note: for single statement braces is not required  but for multiple statement it
 
 # 10. conditional operator if-elseif-else
 
-#1
--- if-else-if ladder is a series of if, else if or else statements that are executed based on the boolean condition.
--- if else if ladder is used to test multiple conditions
 
-#2
-syntax of if-else-if ladder
+- if-else-if ladder is a series of if, else if or else statements that are executed based on the boolean condition.
+- if else if ladder is used to test multiple conditions
 
+
+- syntax of if-else-if ladder
+
+```java
 if(condition1)
 {
     //block of code  
@@ -606,10 +608,13 @@ else{
     //block of code
 }
 
+```
 Note: only one block is executed from all. If all condition is false then else part executed
 
-#3
--- check greatest number from three number.
+
+- check greatest number from three number.
+
+```java
       int x=8;
       int y=7;
       int z=6; 
@@ -620,6 +625,8 @@ Note: only one block is executed from all. If all condition is false then else p
         else
         System.out.println("z is greater");  
 
+```
+
 <br/>
 
 > [Top](#java-cheatsheet)
@@ -628,29 +635,29 @@ Note: only one block is executed from all. If all condition is false then else p
 
 # 11. ternary operator
 
-#1
--- ternary operator is shorthand of if-else statement.
+- ternary operator is shorthand of if-else statement.
 
-#2
- why we need ternary operator?
+- why we need ternary operator?
   a) to reduce the code
   b) to make the code more readable
   c) to make the code more compact
 
-#3
-Syntax:
-variable = (condition)?value1 if condition is true :value2 if condition is false
-boolean result  =(5 less then 6)? true :false; //result false
+- Syntax:
 
-#4
-example:
-in if-else we can check a given number is even or odd now we code this problem by 
+variable = (condition)?value1 if condition is true :value2 if condition is false
+
+```java
+boolean result  =(5 less then 6)? true :false; //result false
+```
+- in if-else we can check a given number is even or odd now we code this problem by 
 ternary operator.
 
+```java
 int num=13;
 String str=(num%2==0)?"Even":"Odd";
 System.out.println(str); //output: Odd
 
+```
 
 <br/>
 
@@ -660,26 +667,24 @@ System.out.println(str); //output: Odd
 
 # 12. Switch case
 
-#1
--- switch statement is a multiway branch statement that allows a variable to be tested for equality against a list of values
+- switch statement is a multiway branch statement that allows a variable to be tested for equality against a list of values
 each value is called a case, and the variable being switched on is checked for each switch case.
 
-#2
-if we have multiple test cases and we want to test for a particular value then we can use switch statement. 
+- if we have multiple test cases and we want to test for a particular value then we can use switch statement. 
 At the place switch we can also use if-else-if ladder.
 
-e.g
-suppose user enter a your date of birth and we want to check from multiple year then
+
+- suppose user enter a your date of birth and we want to check from multiple year then
 in this case we can use switch case.
 
-#3
-what dataType we can use in switch statement?
--- the switch statement can have a number of possible execution paths. A switch works with the 
+- what dataType we can use in switch statement?
+- the switch statement can have a number of possible execution paths. A switch works with the 
 byte, short, char, and int primitive data types. It also works with enumerated types (discussed in Enum Types), 
-the String class, and a few special classes that wrap certain primitive types: Character, Byte, Short, and Integer.
+- the String class, and a few special classes that wrap certain primitive types: Character, Byte, Short, and Integer.
 
-#4
-Syntax of Switch and example:
+- Syntax of Switch and example:
+
+```java
 switch(variable){
     case x1:
     //code
@@ -693,7 +698,10 @@ switch(variable){
     //code
 }
 
-example:
+```
+
+
+```java
 int x=9;
 switch(x){
 case 8:
@@ -706,14 +714,16 @@ default:
   System.out.println("No match found");
  }
 
-#5
-Need of break 
---  The break statements are necessary because without them, statements
+```
+
+- Need of break 
+- The break statements are necessary because without them, statements
 in switch blocks fall through: All statements after the matching case label
 are executed in sequence, regardless of the expression of subsequent case labels,
 until a break statement is encountered. The program  shows
 statements in a switch block that fall through.
 
+```java
 int x=5;
 switch(x){
     case 5:
@@ -724,6 +734,7 @@ switch(x){
     System.out.println("default");
 }
 
+```
 output:
 five
 six
@@ -732,11 +743,11 @@ default
 Since, we are not using break after matching the case 5
 it execute all remaining statements without check.
 
-#6
-Need of default:
- The default section handles all values that are not explicitly handled by one of the case sections.
 
- example:
+- Need of default:
+    - The default section handles all values that are not explicitly handled by one of the case sections.
+
+```java
 int y=9;
 switch(y){
     case 8:
@@ -746,6 +757,8 @@ switch(y){
         System.out.println("7");
         break;
     }
+```
+
 In this case you don’t get any result because no case is match and 
 since no default case is available so, nothing we get.
 
@@ -771,13 +784,15 @@ While loop:-
 - The while loop is used when the number of iterations is unknown but the terminating condition is known.
 -  While loop is also an entry-controlled loop as the condition is checked before entering the loop. The test condition is checked first and then the control goes inside the loop.
 
+```java
 Syntax of while loop:-
  while(condition)
  {
   statements;
  }
+```
 
-#2
+
 Nested loops:-
 - We can also use a loop inside another loop statement. A loop inside another loop is known as a nested loop.
 - There can be any number of inner loops inside an outer loop.
@@ -791,20 +806,22 @@ Nested loops:-
 
 # 14.  do while 
 
-Do- While Loop:-
-When you have to execute the block at least once even if the condition is false, then in such cases we use do- while loop.
+Do While Loop:-
+- When you have to execute the block at least once even if the condition is false, then in such cases we use do- while loop.
 - Do- while is almost similar to while loop except thst the condition is checked after evaluation after body of the loop.
 - Do-while runs at least once and at most as many times the test condition evaluates to true.
 - Consition is cjeckd at the end of the execution of the body in this loop.
 - It is also known as exit- controlled loop.
 - It is the only loop that has a semicolon(;).
 
+```java
 Syntax of do-while loop:-
  do
  {
   statement;
  }while(condition);
 
+```
 
 <br/>
 
@@ -814,12 +831,9 @@ Syntax of do-while loop:-
 
 # 15. for loop
 
-#1
--In the while loop we have three things: Initialization, Condition, and then increment.
--We do these three things in different lines in a while loop.
--Sometimes we do not know about the ending point, where this loop will get end. As it may end based on some conditions.
-
-#2
+- In the while loop we have three things: Initialization, Condition, and then increment.
+- We do these three things in different lines in a while loop.
+- Sometimes we do not know about the ending point, where this loop will get end. As it may end based on some conditions.
 - In the finite loop, we know about its starting and ending.
 - For loop supports three different statements in one line.
 - We can put initialization, condition and increment in one single line in for loop.
@@ -828,21 +842,21 @@ Syntax of do-while loop:-
 - So, in general, we start from 0 and end at count-1 ie., one less than the total number of iterations.
 - Loops are very useful when we have to print some pattern or want to print things repeatedly.
 
-#3
+```java
 Syntax of For Loop:-
  for(initiation; condition; incrementation or decrementation)
  {
   statements;
  }
+```
 
-* init - The init expression is used for initializing a variable, and it is executed only once.
-* condition - It executes the condition statement for every iteration. If it evaluates the condition to be true, it executes the body of the loop. The loop will continue to run until the condition becomes false.
-* incr/ decr - It is the increment or decrement statement applied to the variable to update the initial expression.
+- init - The init expression is used for initializing a variable, and it is executed only once.
+- condition - It executes the condition statement for every iteration. If it evaluates the condition to be true, it executes the body of the loop. The loop will continue to run until the condition becomes false.
+- incr/ decr - It is the increment or decrement statement applied to the variable to update the initial expression.
 
 - First initiation and condition statement execute and then execution of statements takes place and then increment takes place at last.
 - We can also skip any of the three parts as per the need.
 
-#4
 Nested For loops:-
 - We can also use nested for loops as same as while loop. Nested loops mean loop inside a loop.
 - Whenever the outer loop meets the condition, the inner loop is executed completely.
