@@ -874,16 +874,13 @@ Nested For loops:-
 Java is Object- Oriented Programming:-
 - In the real world, everything is an object like a pen, mouse, glass, etc.
 - Every object has two things:
-  - An object knows something ( It has some properties)
- - An object does something( It has a behaviour)
+- An object knows something ( It has some properties)
+- An object does something( It has a behaviour)
 - Every object has a property and behaviour. It can also have multiple properties as well as multiple behaviours.
 - To create an object, first, we need to create a class.
 - Class act as a blueprint that contains the designing of an object.
-
-#2
 - JVM creates objects in Java.
 - JVM creates an object but it requires a blueprint.
-
 - Thus, you create a class file that class file gets compiled to create a byte code and that byte code goes to the JVM and then JVM creates an object.
 
 Whatever we do in Java, we do it in a class.
@@ -892,13 +889,15 @@ A class is a user-defined blueprint or prototype from which objects are created.
 - Class will be created in the same java file.
 - We can create any number of classes in a program.
 - Class does not occupy memory.
+
+```java
 Syntax of a class:-
  class classname
  {
   methods, variables
  }
+```
 
-#2
 - Every object has two things: properties and methods.
 - When an object of a class is created, the class is said to be instantiated. All the instances share the attributes and the behavior of the class. 
 - Action will be done with the help of methods.
@@ -907,19 +906,21 @@ Syntax of a class:-
 - As Java is a statically typed language so you have to specify the return type in it.
 
 Syntax of method:-
-= access modifier return type method name()
+
+- access modifier return type method name()
+
+```java
  public int add()
  {
   statement;
  }
+```
 
-#3
 - We need an object to call a method from a different class.
 - Creating an object:-
  classname reference variable= new classname();
 - reference variable is used to tell that this variable is made to establish a reference between a class.
 - new keyword is used to tell that we have to utilise the space for an object.
-
 - We can call a method by using the reference variable of the object. 
 - We have to pass the values if we want some operations to be on them.
 - We also have to accept values in a method as well if we pass some values. For this, we have to specify parameters in a method based on the type of passed values.
@@ -934,7 +935,6 @@ Syntax of method:-
 
 # 17. Method
 
-#1
 A method in Java or Java Method is a collection of statements that perform some specific task and return the result to the caller.
 - Methods in Java allow us to reuse the code without retyping code.
 - In Java, we create the components with the help of classes.
@@ -946,16 +946,14 @@ A method in Java or Java Method is a collection of statements that perform some 
 - We can pass also pass values in a method.
 - We can also put conditions inside the method like with the help of if..else.
 - return keyword stops the execution of a method as it does not execute the further statements after it.
-
-#2
--- void is used when we do not want a method to return something.
--- String is used to return a string value.
--- int is used to return an integer value.
-
+- void is used when we do not want a method to return something.
+- String is used to return a string value.
+- int is used to return an integer value.
 - Main method is the start of execution from where the program begins. 
 
-#3
 The syntax for method:-
+
+```java
 class Computer
 {
  public void playMusic()
@@ -963,6 +961,7 @@ class Computer
   System.out.println("Music Playing..");
  }
 }
+```
 
 <br/>
 
@@ -972,8 +971,8 @@ class Computer
 
 # 18. Method overloading
 
-#1
-It is not compulsory that a class should have methods and variables. It will be empty also.
+
+- It is not compulsory that a class should have methods and variables. It will be empty also.
 - The parameters that except the values in a method should be equal to the parameters that we pass in a method to call it.
 - As it might create a problem if the parameters excepted by the method are not equal to the number of values passed.
 - So, to overcome this problem we do overloading.
@@ -981,14 +980,13 @@ It is not compulsory that a class should have methods and variables. It will be 
 - Either the number of parameters or the type of parameters should be different.
 - Method with the same name and parameters but with different return types will also not work. The return type does not matter here. Method name and parameters matter only.
 
-#2
-Method overloading:- In Java, there can be more than one method with the same name but the number of parameters or type of parameters should be different.
-
+Method overloading:- 
+- In Java, there can be more than one method with the same name but the number of parameters or type of parameters should be different.
 - Method overloading is also known as Compile-time Polymorphism, Static Polymorphism, or Early binding in Java.
 - In Method overloading compared to parent argument, child argument will get the highest priority.
 
-#3
 Different ways of Method Overloading in Java:-
+
 1. Changing the number of parameters
 - Method overloading can be achieved by changing the number of parameters while passing to different methods.
 
@@ -998,19 +996,17 @@ Different ways of Method Overloading in Java:-
 3. Changing the Order of the Parameters of Methods
 - By rearranging the parameters of two or more overloaded methods.
 
-#1
 In java we are managing our managing our memory using two data structure stack and heap.
 two categories to store data in memory:
+
 1) Stack data structure
 2) heap data structure
 
-#2
-Stack is data structure which follow LIFO(Last in First Out) principle.
+- Stack is data structure which follow LIFO(Last in First Out) principle.
 
-#3
-heap is data structure which is used to store data in form of object and object is a collection of data and method.
+- heap is data structure which is used to store data in form of object and object is a collection of data and method.
 
-#4
+```java
 class Student{
     int instVariable; //store in object and object created in heap
     public static void main(String []args){
@@ -1022,13 +1018,14 @@ class Student{
         return num1+num2;
     }
 }
+```
 
--- instance variable stored in object and object are in heap therefore we can say that instance variable created in heap.
--- method declaration and definition is present in object but actual implementation present in stack frame of stack.
--- local variable created in stack during call of method.
--- stack frame of called method is present in stack area.
--- st is reference variable created inside the current stack frame and it is reference variable store address of student object created in heap area.
--- new Student() create object in heap area and pointed by his reference variable.
+- instance variable stored in object and object are in heap therefore we can say that instance variable created in heap.
+- method declaration and definition is present in object but actual implementation present in stack frame of stack.
+- local variable created in stack during call of method.
+- stack frame of called method is present in stack area.
+- st is reference variable created inside the current stack frame and it is reference variable store address of student object created in heap area.
+- new Student() create object in heap area and pointed by his reference variable.
 
 <br/>
 
@@ -1038,55 +1035,71 @@ class Student{
 
 # 19. Array
 
-#1
+
 Ways to create array in java
-a)Literal notation
-Literal notation: int[] arr = {1, 2, 3};
-b)Object notation
-Array constructor: int[] arr = new int[]{1, 2, 3}; // this is not literal notation ,this is object notation with assignment of value
-Array constructor with size: int[] arr = new int[3]; arr[0] = 1; arr[1] = 2; arr[2] = 3; //in this we manually assign value but by default 0 is assign in this case 
 
-#2
-default value which store array when we create using object notation for primitive datatype.
+- Literal notation
 
--- When you create an array of primitive data types in Java using the object notation, the default value stored in the array depends on the data type:
+```java
+int[] arr = {1, 2, 3};
+```
 
- -- int arrays: default value is 0
- -- boolean arrays: default value is false
- -- char arrays: default value is '\u0000' (null character)
- -- byte, short, long arrays: default value is 0
- -- float arrays: default value is 0.0f
- -- double arrays: default value is 0.0d
+- Object notation
+
+    Array constructor:
+
+```java
+ int[] arr = new int[]{1, 2, 3}; // this is not literal notation ,this is object notation with assignment of value
+```
+Array constructor with size: 
+
+```java
+int[] arr = new int[3]; 
+arr[0] = 1; 
+arr[1] = 2; 
+arr[2] = 3; //in this we manually assign value but by default 0 is assign in this case 
+```
+
+- default value which store array when we create using object notation for primitive datatype.
+
+- When you create an array of primitive data types in Java using the object notation, the default value stored in the array depends on the data type:
+
+- int arrays: default value is 0
+- boolean arrays: default value is false
+- char arrays: default value is '\u0000' (null character)
+- byte, short, long arrays: default value is 0
+- float arrays: default value is 0.0f
+- double arrays: default value is 0.0d
 
 
 code for you --
+
+```java
 char ch[]=new char[3]; //declaration and initialization
       
 for(int i=0;i less then ch.length;i++){
     System.out.println(ch[i]);
 }
 
-check result--
+```
 
-#4
-fetching the element of array :
--- for traversing whole array, you need to know either length of array or know length property of array
--- using length property we get length of array
--- using index we can fetch all value of array
-
-suppose we create int nums[]={2,3,4,5};
-access first element then nums[0],
-access second element nums[1],
-access third element nums[2],
-access fourth element nums[3];
-
--- if you match pattern for accessing the element
+- fetching the element of array :
+- for traversing whole array, you need to know either length of array or know length property of array
+- using length property we get length of array
+- using index we can fetch all value of array
+- suppose we create int nums[]={2,3,4,5};
+- access first element then nums[0],
+- access second element nums[1],
+- access third element nums[2],
+- access fourth element nums[3];
+- if you match pattern for accessing the element
 you get nth element is nums[n-1];
-for 7th element nums[7-1]; i.e is nums[6]
-
--- in array position start from 0,1,2, go till n-1 if n is length of array
+for 7th element nums[7-1]; 
+i.e is nums[6]
+- in array position start from 0,1,2, go till n-1 if n is length of array
 change value of given position
 
+```java
 int nums[]={2,3,4,5};
 
 for(int i=0;i less then nums.length;i++){
@@ -1102,6 +1115,7 @@ for(int i=0;i less then nums.length;i++){
     System.out.println(nums[i]);
 }
 
+```
 <br/>
 
 > [Top](#java-cheatsheet)
@@ -1111,7 +1125,8 @@ for(int i=0;i less then nums.length;i++){
 # 20. Multi dimentional array
 
 what is multidimension array?
--- simple we can say it is array of array
+
+- simple we can say it is array of array
 
 -------------
 | 1 | 2 | 3 |
@@ -1119,27 +1134,27 @@ what is multidimension array?
 | 4 | 5 | 6 |
 -------------
 
-Above is example of 2-d array which has 2 rows and 3 columns.
--- it seems to look like a bigger array consist two single dimension array.
--- just like we have 3-d array and array might be n-dimension.
+- Above is example of 2-d array which has 2 rows and 3 columns.
+- it seems to look like a bigger array consist two single dimension array.
+- just like we have 3-d array and array might be n-dimension.
+- Why do we need multidimension array?
+- to solve some matrix problem to solve grid problem
+- How to create multidimension in java?
+- different Ways to create array in java
 
-#2
-Why do we need multidimension array?
--- to solve some matrix problem to solve grid problem
-
-#3
-How to create multidimension in java?
--- different Ways to create array in java
   a)Literal notation
+
   Literal notation: int [][]arr = {{1, 2, 3},{4,5,6}};
+
   b)Object notation
-  int [][]nums=new int[2][3];
 
--- general syntax for object notation:
--- dataType [][]arrayName=new dataType[rows][columns];
+  int [][]nums = new int[2][3];
 
-#4
-how to access element of multidimension array element?
+- general syntax for object notation:
+- dataType [][]arrayName = new dataType[rows][columns];
+
+- how to access element of multidimension array element?
+
 let we create 2d array arr
 int [][]arr = {{1, 2, 3},{4,5,6}};
 -------------
@@ -1148,40 +1163,52 @@ int [][]arr = {{1, 2, 3},{4,5,6}};
 | 4 | 5 | 6 |
 -------------
 
--- there are two rows whose index are 0,1 and columns are 0,1,2.
--- want to access 2 which are at row 0 and columns 1
--- System.out.println(arr[0][1]); //give 2 
+- there are two rows whose index are 0,1 and columns are 0,1,2.
+- want to access 2 which are at row 0 and columns 1
+```java
+- System.out.println(arr[0][1]); //give 2 
+```
 
 simple if you want to access element at ith row and jth column then;
+```java
 arr[i][j]; //it is value at that position
+```
 
-#5
 How to use enhanced for loop 
 
 for  array name arr:
--- using for loop traverse all element
--- arr.length give number of rows and arr[0].length give number of column in first row 
+- using for loop traverse all element
+- arr.length give number of rows and arr[0].length give number of column in first row 
+
+```java
 for(int i=0;i arr.length;i++){
     for(int j=0;j arr[0].length;j++){
         System.out.print(arr[i][j]+" ");
     }
     System.out.println();
 }
+```
 
 using enhanced for loop:
+
+```java
 for(int x[]: arr){
     for(int y:x){
         System.out.print(y+" ");
     }
     System.out.println();
 }
+```
 
 general syntax for enhanced for-loop 
+
+```java
 for(dataType singleDimension[]: twoDimension){
     for(dataType element: singleDimension){
         System.out.println(element);
     }
 }
+```
 
 
 <br/>
@@ -1192,7 +1219,7 @@ for(dataType singleDimension[]: twoDimension){
 
 # 21 . Jagged and 3D Array
 
-#1
+
 Suppose we want to create a 2d dimensional array such that it has 
 5 rows but we donot know for each row we need different size for column.
 for that we go for array of array of different size
@@ -1208,14 +1235,12 @@ for that we go for array of array of different size
 in above diagram we have three rows and first row has 3 elements
 second row has 5 elements and third row has 6 elements.
 
-#2#3
 jagged array concept come in java 8 
--- Jagged array is a multidimensional array where member arrays are of different size. For example, we can 
-create a 2D array where first array is of 3 elements, and is of 4 elements. Following is the example demonstrating
- the concept of jagged array.
+- Jagged array is a multidimensional array where member arrays are of different size. For example, we can 
+create a 2D array where first array is of 3 elements, and is of 4 elements. Following is the example demonstrating the concept of jagged array.
 
- syntax to create --
-
+- syntax to create 
+```java
  int nums[][]=new int[3][];
  nums[0] =new int[3];
  nums[1] =new int[5];
@@ -1227,23 +1252,32 @@ initalize value in array using random()method present in Math class
                 nums[i][j]=(int)(Math.random()*10);
             }
         }
-#5
-Traverse using for loop :
+```
+
+- Traverse using for loop :
+
+```java
    for(int i=0;i nums.length;i++){
             for(int j=0;j nums[i].length;j++){
                 System.out.print(nums[i][j]+" ");
             }
         }
 
+```
 Traverse using enhanced for loop:
+
+```java
   for(int x[]:nums){
             for(int y:x){
                 System.out.println(y);
             }
         }    
+```
 
 Note: Just like 2-d jagged array we can create 3-d , 4-d jagged array
 for cursoity:
+
+```java
  int num[][][]=new int[3][][];
         num[0]=new int[2][];
         num[1]=new int[3][];    
@@ -1258,7 +1292,7 @@ for cursoity:
         num[2][2]=new int[9];
         num[2][3]=new int[10];
 
-Intialize the array:
+// Intialize the array:
 for(int i=0;i num.length;i++){
     for(int j=0;j num[i].length;j++){
         for(int k=0;k num[i][j].length;k++){
@@ -1267,7 +1301,7 @@ for(int i=0;i num.length;i++){
     }
 }
 
-Traverse the element of array:
+// Traverse the element of array:
 for(int i=0;i num.length;i++){
     for(int j=0;j num[i].length;j++){
         for(int k=0;k num[i][j].length;k++){
@@ -1276,6 +1310,7 @@ for(int i=0;i num.length;i++){
     }
 }
 
+```
 <br/>
 
 > [Top](#java-cheatsheet)
@@ -1285,35 +1320,39 @@ for(int i=0;i num.length;i++){
 
 # 22 . Array of Objects 
 
--- If we create array by default value assign for each type of array
--- The new operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types
+- If we create array by default value assign for each type of array
+- The new operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types
 and null for all reference types.
--- why we should we know length of array using length property?
--- There is array out of bound exception.
+- why we should we know length of array using length property?
+- There is array out of bound exception.
+- How to create array of object and what does it means?
+- just like to create array for int, float, char we can create array of object 
+- when we we create array of object it means we create an array which can hold the reference of object.
 
-How to create array of object and what does it means?
--- just like to create array for int, float, char we can create array of object 
--- when we we create array of object it means we create an array which can hold the reference of object.
-
-e.g
+```java
+// e.g
 class Student{
 
 }
 
 Student st=new Student();
+```
+
 we know st is reference and new Student() is object.
 and st hold reference of student object.
-
 similarly whenever we create array of object
-Student sts[]=new Student[5];
-it means we can create an array of Student reference type which can hold 5 different reference of
-Student object.
-sts[0]=new Student();
-sts[1]=new Student();
-sts[2]=new Student();
-sts[3]=new Student();
-sts[4]=new Student();
 
+```java
+Student sts[] = new Student[5];
+// it means we can create an array of Student reference type which can hold 5 different reference of
+// Student object.
+sts[0] = new Student();
+sts[1] = new Student();
+sts[2] = new Student();
+sts[3] = new Student();
+sts[4] = new Student();
+
+```
 
 <br/>
 
@@ -1323,39 +1362,37 @@ sts[4]=new Student();
 
 # 23 . Strings
 
-#1
--- If you want to store character sequence e.g "shiva", "navin", "hyder" in 
+- If you want to store character sequence e.g "shiva", "navin", "hyder" in 
 such cases we need character array or String (non-primitive data ) .
--- But Using String object it is easy to store sequence of character.
-
--- String is non primitive data-type and it is also a class. 
+- But Using String object it is easy to store sequence of character.
+-String is non primitive data-type and it is also a class. 
 String str="shiva";
 
-#2
-How to create String object?
--- using new operator String str=new String("shiva");
--- directly assigning String str="shiva"; put sequence of character inside a double quotes.
+- How to create String object?
+- using new operator String str=new String("shiva");
+- directly assigning String str="shiva"; put sequence of character inside a double quotes.
+- What is hashcode?
+- hashcode is unique number for each object created in heap.
+- hashcode is used to identify object.
 
-#3
-What is hashcode?
--- hashcode is unique number for each object created in heap.
--- hashcode is used to identify object.
+- Concatenation operator
+- + operator used to concatenate the String
 
-#4
-Concatenation operator
---  + operator used to concatenate the String
-String firstName="shiva";
-String lastName="srivastava";
-String fullName=firstName+lastName;
+```java
+String firstName = "shiva";
+String lastName = "srivastava";
+String fullName = firstName+lastName;
 System.out.println(fullName); //shivasrivastava
+```
 
-#5
 some method used in String
 a) int length() --to find the length of String
 b) char charAt(int index) --to find character at particular index
 
+```java
 System.out.println(str.charAt(0));
 System.out.println(str.length());
+```
 
 Note: In array length is property while in String length() is method.
 
@@ -1370,86 +1407,105 @@ Note: In array length is property while in String length() is method.
 
 # 24. StringBuffer & StringBuilder
 
-#1
-Using the new keyword, you can create multiple objects from the same character sequence.
-This is useful when you want to save time   by creating multiple objects from the same data source. However, when using a string literal,
-you can only create one object. String literals are read-only memory locations, so they cannot be changed and can only be used to create a
- single object. This makes string literals less flexible than the new keyword.
+- Using the new keyword, you can create multiple objects from the same character sequence.
+This is useful when you want to save time by creating multiple objects from the same data source. However, when using a string literal,
+- you can only create one object. String literals are read-only memory locations, so they cannot be changed and can only be used to create a single object. This makes string literals less flexible than the new keyword.
 
+```java
 String name1="navin";
 String name2="navin";
+```
 
-Since "navin" is same character sequence and created by string literal way. 
+- Since "navin" is same character sequence and created by string literal way. 
 so name1 and name2 pointing same object created in string constant pool.
 
-check--
+```java
 System.out.println(name1==name2); //true 
+```
 
-using new --
+```java
 String name3=new String("navin");
 System.out.println(str1==str3); //false
+```
+
 Since new can create new string object which can contain navin.
 
-#2
-what is string constant pool?
--- The String constant pool is an area in the Java heap that stores immutable strings.
+- what is string constant pool?
+- The String constant pool is an area in the Java heap that stores immutable strings.
 It is used to optimize the storage of strings in the program by providing a single location 
 for string literals. When a string is created in the program, the Java Virtual Machine first
 checks if the same string exists in the constant pool and if so, it is returned instead of creating
 a new string. This helps to reduce the memory footprint and also improve performance since the string
 comparison operation is also optimized.
 
-#3
-what happen when we assign different value to String reference variable?
+- what happen when we assign different value to String reference variable?
+
 suppose we create 
+
+```java
 String str="Mathura";
 now str=str+" city"; 
 System.out.println(str);//here we get Mathura city
+```
 
--- do you think we change in existing "Mathura" object 
+- do you think we change in existing "Mathura" object 
 then answer is no because String is immutable type which cannot further changed.
--- here reference variable str pointing to new object that  is "Mathura city";
--- and "Mathura" object ready for garbage collection because no variable pointing the "Mathura" object.
+- here reference variable str pointing to new object that  is "Mathura city";
+- and "Mathura" object ready for garbage collection because no variable pointing the "Mathura" object.
 
-#4
-What is difference between mutable and immutable String?
---Mutable and immutable strings are two different types of strings in programming.
+- What is difference between mutable and immutable String?
+- Mutable and immutable strings are two different types of strings in programming.
 Mutable strings are strings which can be modified once they are created. 
--- Immutable strings, on the other hand, cannot be changed after they have been created. 
+- Immutable strings, on the other hand, cannot be changed after they have been created. 
 
 String is immutable 
 StringBuffer and StringBuilder are mutable in nature
 
 StringBuffer class and StringBuilder class
---  string buffer and string builder class in java used to create mutable string 
+- string buffer and string builder class in java used to create mutable string 
 
-#2
 Different method
- --First Create StringBuffer object 
+- First Create StringBuffer object 
+```java
         StringBuffer sb = new StringBuffer("Hello");
- --Find capacity of StringBuffer 
+```
+- Find capacity of StringBuffer 
+
+```java
         System.out.println(sb.capacity());
-        -- default capacity is 16
+        //default capacity is 16
+```
 
---Find the length of StringBuffer Created String
+- Find the length of StringBuffer Created String
+
+```java
         System.out.println(sb.length());
+```
     
---To append the content in existing StringBuffer object
+- To append the content in existing StringBuffer object
+```java
         sb.append(" World");
+```
 
---To Convert StringBuffer Object into String Object
+- To Convert StringBuffer Object into String Object
+
+```java
         String str=sb.toString();
         System.out.println(str);
+```
 
--- Delete charcter of particular index
+- Delete charcter of particular index
+
+```java
         sb.deleteCharAt(3);
-        -- delete character at index 3
+        // delete character at index 3
+```
 
--- Insert "hi " at index 0 of existingStringBuffer Object
+- Insert "hi " at index 0 of existingStringBuffer Object
+    ```java
         sb.insert(0, "Hi ");
         System.out.println(sb);
-
-#3
+    ```
 Difference between StringBuffer and StringBuilder
        -- StringBuffer is thread safe
        -- StringBuilder is not thread safe
@@ -1467,26 +1523,26 @@ Imp: We will discuss thread safe when we study multithreading
 # 25. static variable
 
 
-#1
 Use of static keyword
-= when we are using static keyword with variable, block, method it become
+- when we are using static keyword with variable, block, method it become
 independent of object. 
+
 e.g class{
-    static int a=5;
+    static int a = 5;
 }
-= a is not dependent on object .if we have two object obj1 and obj2 then both object able to access this 
+
+- a is not dependent on object .if we have two object obj1 and obj2 then both object able to access this 
 variable.
-= when we are using static it become independent to object.
+- when we are using static it become independent to object.
 
-#2
-Four place we can use static keyword 
-a) before variable declaration e.g class Calc{ static int s; }
+- Four place we can use static keyword 
+- before variable declaration e.g class Calc{ static int s; }
+- before a block  class Calc{  static {System.out.println("this is static block);}}
+- during method creation class Calc{public static void add(int num1,int num2){};}
+- with concept of inner class (It is not discussed in this lecture) 
 
-b) before a block  class Calc{  static {System.out.println("this is static block);}}
+```java
 
-c) during method creation class Calc{public static void add(int num1,int num2){};}
-
-d) with concept of inner class (It is not discussed in this lecture) 
 class OuterClass {
   int x = 10;
 
@@ -1494,19 +1550,24 @@ class OuterClass {
     int y = 5;
   }
 }
+```
 
-#3
 When memory get allocated
-= for that we need to know some term 
-a)stack area b)heap area c)class loader system 
+- for that we need to know some term 
+
+a)stack area 
+b)heap area 
+c)class loader system 
+
 Step 1: when you compile the code you get .class file 
 Step 2: when you are executing (java MainClass) first class loading to class loader System.
 Step 3: During class loading static variable initialize, static block get executed.
 Step 4: Since, static variable got memory in heap before object creation. Now we can say that it is independent of object.
 
-#4
+
 Static variable vs instance variable
 
+```java
 Class Calc{
     static int stA=100; //independent of object // we can use this by class name as well as object
     int  inB=100;  //dependent of object //we can only use this by object
@@ -1538,6 +1599,7 @@ System.out.println(obj2.inB); // output: 100 no change in obj2
 }
 }
   
+```
 
 Remember one thing:
 i)we can use static property, member inside non static block or method without object creation.
@@ -1551,26 +1613,26 @@ ii) But we cannot use non static property or method inside static block or metho
 
 # 26. static block
 
-#1
 Use of static keyword
-= when we are using static keyword with variable, block, method it become
+- when we are using static keyword with variable, block, method it become
 independent of object. 
+
 e.g class{
     static int a=5;
 }
-= a is not dependent on object .if we have two object obj1 and obj2 then both object able to access this 
+
+- a is not dependent on object .if we have two object obj1 and obj2 then both object able to access this 
 variable.
-=when we are using static it become independent to object.
+- when we are using static it become independent to object.
 
-#2
-Four place we can use static keyword 
-a) before variable declaration e.g class Calc{ static int s; }
+Four place we can use static keyword
 
-b) before a block  class Calc{  static {System.out.println("this is static block);}}
+- before variable declaration e.g class Calc{ static int s; }
+- before a block  class Calc{  static {System.out.println("this is static block);}}
+- during method creation class Calc{public static void add(int num1,int num2){};}
+- with concept of inner class (It is not discussed in this lecture) 
 
-c) during method creation class Calc{public static void add(int num1,int num2){};}
-
-d) with concept of inner class (It is not discussed in this lecture) 
+```java
 class OuterClass {
   int x = 10;
 
@@ -1579,54 +1641,27 @@ class OuterClass {
   }
 }
 
-#3
+```
+
 When memory get allocated
-= for that we need to know some term 
-a)stack area b)heap area c)class loader system 
+- for that we need to know some term 
+
+a)stack area 
+b)heap area 
+c)class loader system 
+
 Step 1: when you compile the code you get .class file 
 Step 2: when you are executing (java MainClass) first class loading to class loader System.
 Step 3: During class loading static variable initialize, static block get executed.
 Step 4: Since, static variable got memory in heap before object creation. Now we can say that it is independent of object.
 
-#4
-Static variable vs instance variable
-
-Class Calc{
-    static int stA=100; //independent of object // we can use this by class name as well as object
-    int  inB=100;  //dependent of object //we can only use this by object
-
-public static void main(String []args){
-Calc obj1=new Calc(); 
-Calc obj1=new Calc();
-//for static variable
-System.out.println(Calc.stA); //use with class name
-System.out.println(obj1.stA);  //use by object name
-
-//for instance variable
-//System.out.println(Calc.inB); //got an error --Cannot make a static reference to the non-static
-System.out.println(obj1.inB); //used by object name reference 
 
 
-// = if we can change value static or instance what happen 
-obj1.inB=1000;
-obj1.stA=2000;
-
-//static 
-System.out.println(obj1.stA);//output: 2000
-System.out.println(obj2.stA);//output: 2000 value changed for both obj1 and obj2 
-//it also show that static variable independent of objects
-
-//instance 
-System.out.println(obj1.inB); // output: 1000
-System.out.println(obj2.inB); // output: 100 no change in obj2
-}
-}
-
-#5
 static block vs non static block
-= remember static block executed before the execution of static method 
-= non static block executed when you try to create the object and executed before constructor called.
+- remember static block executed before the execution of static method 
+- non static block executed when you try to create the object and executed before constructor called.
 
+```java
 class Calc{
     static{
         System.out.println("Static Block");
@@ -1655,10 +1690,10 @@ class Help{
         System.out.println("Hello");
     }
 }
+```
+
 
 /*
- PS D:\telusko\january\java-course-telusko\code  javac Calc.java
-PS D:\telusko\january\java-course-telusko\code  java Calc
 Static Block
 Executed before main
 main method
@@ -1666,15 +1701,6 @@ Non static block executed before the execution of constructor
 Static block of Help class
 Hello
  */
-
-#6
-Static method vs non static method
-= remember we can call static method with object reference or class name  e.g ClassName.staticMethod() or objReference.statiMethod()
-= but non static method dependent on object so it can be called only  by object reference. e.g objReference.nonStaticMethod();
-
-Remember one thing:
-i)we can use static property, member inside non static block or method without object creation.
-ii) But we cannot use non static property or method inside static block or method without object creation.
 
 
 <br/>
@@ -1686,120 +1712,10 @@ ii) But we cannot use non static property or method inside static block or metho
 
 # 27. static method
 
-#1
-Use of static keyword
-= when we are using static keyword with variable, block, method it become
-independent of object. 
-e.g class{
-    static int a=5;
-}
-= a is not dependent on object .if we have two object obj1 and obj2 then both object able to access this 
-variable.
-= when we are using static it become independent to object.
 
-#2
-Four place we can use static keyword 
-a) before variable declaration e.g class Calc{ static int s; }
-b) before a block  class Calc{  static {System.out.println("this is static block);}}
-c) during method creation class Calc{public static void add(int num1,int num2){};}
-d) with concept of inner class (It is not discussed in this lecture) 
-class OuterClass {
-  int x = 10;
-  static class InnerClass {
-    int y = 5;
-  }
-}
-#3
-When memory get allocated
-= for that we need to know some term 
-a)stack area b)heap area c)class loader system 
-Step 1: when you compile the code you get .class file 
-Step 2: when you are executing (java MainClass) first class loading to class loader System.
-Step 3: During class loading static variable initialize, static block get executed.
-Step 4: Since, static variable got memory in heap before object creation. Now we can say that it is independent of object.
-
-#4
-Static variable vs instance variable
-
-Class Calc{
-    static int stA=100; //independent of object // we can use this by class name as well as object
-    int  inB=100;  //dependent of object //we can only use this by object
-
-public static void main(String []args){
-Calc obj1=new Calc(); 
-Calc obj1=new Calc();
-//for static variable
-System.out.println(Calc.stA); //use with class name
-System.out.println(obj1.stA);  //use by object name
-
-//for instance variable
-//System.out.println(Calc.inB); //got an error --Cannot make a static reference to the non-static
-System.out.println(obj1.inB); //used by object name reference 
-
-obj1.inB=1000;
-obj1.stA=2000;
-
-//static 
-System.out.println(obj1.stA);//output: 2000
-System.out.println(obj2.stA);//output: 2000 value changed for both obj1 and obj2 
-
-
-//instance 
-System.out.println(obj1.inB); // output: 1000
-System.out.println(obj2.inB); // output: 100 no change in obj2
-}
-}
-
-#5
-static block vs non static block
-= remember static block executed before the execution of static method 
-= non static block executed when you try to create the object and executed before constructor called.
-
-class Calc{
-    static{
-        System.out.println("Static Block");
-        System.out.println("Executed before main");
-    }
-
-    {
-        //non static block
-        System.out.println("Non static block executed before the execution of constructor");
-    }
-
-    public static void main(String []args){
-        System.out.println("main method");
-        Calc c = new Calc(); //non static block executed when we create object 
-        // Help h ; -- this will not execute static block of Help class
-        // Help h = new Help(); this will execute static block of Help class
-        Help.wish(); //-- this will execute static block of Help class
-
-    }
-}
-
-class Help{
-    static {
-        System.out.println("Static block of Help class");
-    }
-    static void wish(){
-        System.out.println("Hello");
-    }
-}
-
-/*
- PS D:\telusko\january\java-course-telusko\code javac Calc.java
-PS D:\telusko\january\java-course-telusko\code java Calc
-Static Block
-Executed before main
-main method
-Non static block executed before the execution of constructor
-Static block of Help class
-Hello
- */
-
-#6
 Static method vs non static method
-= remember we can call static method with object reference or class name  e.g ClassName.staticMethod() or objReference.statiMethod()
-= but non static method dependent on object so it can be called only  by object reference. e.g objReference.nonStaticMethod();
+- remember we can call static method with object reference or class name  e.g ClassName.staticMethod() or objReference.statiMethod()
+- but non static method dependent on object so it can be called only  by object reference. e.g objReference.nonStaticMethod();
 
 Remember one thing:
 i)we can use static property, member inside non static block or method without object creation.
@@ -1817,32 +1733,33 @@ ii) But we cannot use non static property or method inside static block or metho
 # 28.  Encapsulation , getters & setters , this keyword , Constructor , default & parametrized constructor
 
 
-#1
 What is encapsulation?
-= binding data with method to make your program secure is known as encapsulation.
+
+- binding data with method to make your program secure is known as encapsulation.
 Consider encapsulation as we have capsule and inside capsule everything inside a class is wrapped or encapsulated.
-e.g
+
+```java
 class A{ private int a;  
 public void setA(int num){a=num;} 
 public int getA(){return a;}
 } 
 //here you can see that we can bind data with method inside a curly braces, it seems look like a capsule inside everything is present.
+```
 
-#2
 how to achieve encapsulation?
--- through access specifiers private,protected,public,default . We can achieve 
+- through access specifiers private,protected,public,default . We can achieve 
 encapsulation.
 
-#3
 Benefit of encapsulation
  i)Helpful in to achieve abstraction 
  ii)for security point of view it is most beneficial.
  iii)you can maintain log file through method when you bind your data with method.
 
-#4
 how to use private data?
--- using setters and getters method we can set and get the value of variable.
--- private int num;
+- using setters and getters method we can set and get the value of variable.
+- private int num;
+
+```java
 public int getNum( )
 {
 return num;
@@ -1852,11 +1769,12 @@ public void setNum(int num)
 {
 this.num=num;
 }
+```
 
- Note:
- Always make variable as private and method as public to achieve  security in program.
+Note:
+Always make variable as private and method as public to achieve  security in program.
 
- Shortcut for writing getters and setters in Eclipse:-
+Shortcut for writing getters and setters in Eclipse:-
 
 - The name of a method should define the objective of the model.
 - For every variable, we have two things: Setters and Getters methods inside a class in Java programming. 
@@ -1866,48 +1784,48 @@ this.num=num;
 
 Getters:-
 - If you want to get the value of a method, we use getters.
-= public int getAge();
+```java
+public int getAge();
 
+```
 Setters:-
 - To set the value in a method, we use overloading.
-= public void setAge()
+```java
+public void setAge()
+```
 
 - There is no complusion that there should be all methods and variables inside the class.
 
 Shortcut for writing getters setters in Eclipse:-
-= Right-click on the editor - source action or insert code - Generate getters and setters.
+- Right-click on the editor - source action or insert code - Generate getters and setters.
 
-#1
-Instance variable:- These variables are declared within a class but outside a method.
+Instance variable:- 
+- These variables are declared within a class but outside a method.
 - These variables are created when we create an object and are destroyed when the object is destroyed.
 
-Local variable:- These variables are declared within a method but do not get any default value.
+Local variable:- 
+- These variables are declared within a method but do not get any default value.
 - They are created when we enter a method or constructor and get destroyed when the call returns from the method.
 
-#2
 In Java, it is not allowed to declare two or more variables having the same name inside a scope either in class scope or method scope.
 - The preference is always given to the local variable.
 - Creating an object is not a good idea to solve the issue of conflicting names of instance and local variables.
 - We can differentiate between local and instance variables by passing an object itself.
 - Instead of writing and passing an object, we can simply use this keyword.
 
-#3
 This keyword:-
 This keyword represents the current object.
 - Current object is an object which is calling the method.
 - This keyword is used to invoke the current class constructor.
 - Using the 'this' keyword, we can return the current class instance.
--  This keyword can be used as an argument in the constructor call.
+- This keyword can be used as an argument in the constructor call.
 
-
-#1
 - When you create an object then in the heap memory, it will just create a blank object.
 - If you do not assign values than the default values will be assigned like:
  0 for int,
  NULL for string
 - We can also define values at the time of the creation of an object by giving our default values.
 
-#2
 Properties of a constructor:
 - Constructor is almost similar to a method it has a name and it also has round brackets.
 - The change in the constructor with respect to the method is that in the constructor we do not specify the return type.
@@ -1916,8 +1834,8 @@ Properties of a constructor:
 -  At the time of calling the constructor, memory for the object is allocated in the memory.
 - Constructors are called only once at the time of object creation. While method(s) can be called any number of times.
 
-#3
 Syntax of a constructor:
+```java
 class human {
  public Human()
  {
@@ -1925,6 +1843,7 @@ class human {
  }
 }
 
+```
 
 A constructor in Java is a special method that is used to initialize objects. 
 
@@ -1936,7 +1855,6 @@ Default Constructor:-
 - A normal constructor is known as the default constructor.
 - If you do not create any constructor, then java creates a default constructor. That constructor will be blank with no parameters.
 - The default constructor is used to provide the default values to the object like 0, null, etc., depending on the type.
-
 - The default constructor can change into the parameterized constructor. But Parameterized constructor can’t change into the default constructor.
 
 <br/>
@@ -1947,13 +1865,12 @@ Default Constructor:-
 
 # 29. super() , this() and anonymous object
 
-#1
 - Whenever you call an object, it will create a constructor of a class.
 - When we create an object of a class that it calls the constructor of a sub-class as well as a constructor of a superclass.
 - If you do not pass any value in an object, then it will call the default constructor of a class.
 - But if you pass the value in an object, then it will call the parameterised constructor of that class.
 
-#2
+
 Super() method:-
 - Every constructor in Java has a method, even if you do not mention it.
 - By default, the first statement in every constructor is a method called a super() method.
@@ -1962,20 +1879,20 @@ Super() method:-
 - If you pass any parameter in a super method, then it will call the parameterised constructor of a superclass.
 - To call the parameterised constructor of a parent class, we need to explicitly call the super method.
 
-#3
+
 Object class:-
 - Every class in Java extends the Object class, even if you do not mention it.
 - Object is a class in Java that contains a lot of methods.
 - So, the super method of a superclass calls the constructor of an object class.
 - There is multi-level inheritance in this concept.
 
-#4
+
 This() method:-
 - this() method calls the constructor of the same class.
 - If you do not pass any parameter in this method, then it will call the default constructor of the same class.
 -  If you pass any parameter in this method, then it will call the parameterised constructor of the same class.
 
-#5 
+
 Similarities in between this() and super() method:-
 - We can use both this and super method anywhere except the static area.
 - Both this and super method can be used any number of times in a code.
@@ -1984,25 +1901,32 @@ But both can be used only one time inside a constructor.
 
 
 
-#1
 In JVM, we have both stack memory and heap memory.
 - Object is created in the heap memory that contains  variable and methods, it also have some address.
-- A obj=new A();
+
+```java
+ A obj = new A();
   obj.show();
-here, A is the classname.
-         obj refers to the address say 101
-    show() is a method that is called using reference variable obj.
+```
+
+here, A is the classname. 
+obj refers to the address say 101
+show() is a method that is called using reference variable obj.
 - Every time you call an object, it will call the constructor as well.
 - Object creation can be done in two ways:
- 1. Declare an object  - creating a reference
- 2. Creating an object  - and assigning the value to it
-e,g.,  A obj;
-  obj=new A();
- *new A() shows that you are creating an object.
+
+    1. Declare an object  - creating a reference
+    2. Creating an object  - and assigning the value to it
+
+e,g.,  
+```java
+    A obj;
+    obj = new A();
+```
+
+-new A() shows that you are creating an object.
 - Reference of an object is created in the stack.
 
-
-#2
 Anonymous Objects:- 
 Anonymous objects are simply created by using the new keyword.
 - It does not have any reference for an anonymous object.
@@ -2019,16 +1943,13 @@ e.g., new A();
 
 # 30.  Inheritance , single inheritance, multilevel inheritance , method overriding
 
-#1
 For every class that we create in a code, there will be a class file.
 - Inheritance helps to add more features by inheriting the class.
 - For inheritance, we only required the class file. There is no need for a java file.
 - extends keyword is used in inheritance to inherit properties of a parent class.
 
-#2
 - The main aim of inheritance is to implement the concept of reusability, saving our time and resources and also creating better connections between different classes, and achieving method overriding. 
 
-#3
 Points related to inheritance in Java:-
 - The superclass of every class is an Object class.
 In the absence of any other explicit superclass, every class is implicitly a subclass of the Object class.
@@ -2040,8 +1961,10 @@ Single Inheritance:-
 - In single inheritance, subclasses inherit the features of one superclass. 
 - Only one parent class exists in single inheritance.
 - It is when there are only two classes.
-e.g., 
+
+
 Calc class inherits the properties of AdvCalc class.
+
 Here, Calc - child class
      AdvCalc - parent class
 
@@ -2056,31 +1979,37 @@ Here, Calc - child class
      AdvCalc - parent class of Calc & child class of VeryAdvCalc
      VeryAdvCalc - parent class of both other classes
 
-     #1
 Multiple inheritance
 If a particular class inheriting multiple class then this type of inheritance is called multiple inheritance.
 like c++ language there are multiple inheritance like that :
+
+```java
 class A
 { 
-... .. ... 
+// ... .. ... 
 };
 class B
 {
-... .. ...
+// ... .. ...
 };
 class C: public A,public B
 {
-... ... ...
+// ... ... ...
 }; 
 
-But Java not allowed  we have alternate option for that is implementing multiple interface not we will discussing in upcoming lecture.
-#2
-why java not support multiple inheritance?
-=Because of the Ambiguity problem, Java does not support multiple inheritances directly.
+```
 
-#3
+
+But Java not allowed  we have alternate option for that is implementing multiple interface not we will discussing in upcoming lecture.
+
+why java not support multiple inheritance?
+Because of the Ambiguity problem, Java does not support multiple inheritances directly.
+
 Why it is ambiguous?
+
 suppose we have some class A, B and c
+
+```java
 class A
 { 
 ... .. ... 
@@ -2105,10 +2034,13 @@ show();
 
 }; 
 
+```
 
 What is method Overriding?
+
 It is way to override the parent class method in child class .
 
+```java
 class Parent{
 int a;
 public void show{System.out.println("this is parent");}
@@ -2123,26 +2055,26 @@ class Main{
         c.show(); //call the child class override method
            }   
 }
- -- method overriding is run time polymorphism
- -- it is use to increase the reusability of code 
 
-#2
+- method overriding is run time polymorphism
+- it is use to increase the reusability of code 
+
+```
+
 for a method to be overridden, the following conditions must be met:
 
- -- The method in the subclass must have the same signature (name, number and type of parameters) as the method in the superclass.
- 
- -- The method in the subclass must have the same return type (or a subtype) as the method in the superclass.
-
- -- The method in the subclass must have the same access level (public, protected, or private) as the method in the superclass.
-
- -- The method in the subclass must not be static, while the method in the superclass must be marked as non-final.
-
- -- The overridden method must be visible from the subclass it means you can change access modifiers but there is condition for 
-    -- you need to increase visibility but you cannot reduced it , you can do it using access modifiers.
-    -- you can change access modifiers in this manner 
-       private -default -protected -public (in upcoming lecture access modifiers has been discussed)
+- The method in the subclass must have the same signature (name, number and type of parameters) as the method in the superclass.
+- The method in the subclass must have the same return type (or a subtype) as the method in the superclass.
+- The method in the subclass must have the same access level (public, protected, or private) as the method in the superclass.
+- The method in the subclass must not be static, while the method in the superclass must be marked as non-final.
+- The overridden method must be visible from the subclass it means you can change access modifiers but there is condition for 
+- you need to increase visibility but you cannot reduced it , you can do it using access modifiers.
+- you can change access modifiers in this manner 
+- private -default -protected -public (in upcoming lecture access modifiers has been discussed)
 
 for knowing about access modifiers wait for access modifiers lecture in this playlist
+
+```java
 class A{
      void show(){ // -- by default access modifier is default
         System.out.println("A");
@@ -2156,33 +2088,38 @@ class B extends A{
      }
 
 }    
+```
 
- what is package ?
+what is package ?
 
--- you are using music, documents, video and you need to store in a different folder as per their use 
+- you are using music, documents, video and you need to store in a different folder as per their use 
 to avoid confusion (Similarly in java for storing class, enum , annotations, sub package  we are using  concept of package).
 
--- in song folder you have multiple songs folder e.g sad songs, romantic songs, rocking song for that we can create sub
+- in song folder you have multiple songs folder e.g sad songs, romantic songs, rocking song for that we can create sub
  folders inside folders of songs ,in package also we can create package inside package
   (Syntax java.util  here java is package and util is subpackage).
 
--- you can structure in which we put similar types of codes in one folder, this concept in java is known as package.
+- you can structure in which we put similar types of codes in one folder, this concept in java is known as package.
 
--- for creating a package we can use a keyword called package at a top of code and code file is in that package.
--- suppose we have AdvCalc.java and Calc.java in one folder tools  then then we can say that AdvCalc.java and Calc.java in tools package.
+- for creating a package we can use a keyword called package at a top of code and code file is in that package.
+- suppose we have AdvCalc.java and Calc.java in one folder tools  then then we can say that AdvCalc.java and Calc.java in tools package.
 
--- if we create database code then you can write it in separate package i.e db package
--- if two java file in different package then you need to import class of one package to different package.
+- if we create database code then you can write it in separate package i.e db package
+- if two java file in different package then you need to import class of one package to different package.
 
 suppose that tools package has two files
-a)AdvCal.java b)Calc.java
+
+a)AdvCal.java 
+b)Calc.java
 
 and db package has two files
-a)Demo.java b)Multiply.java
+a)Demo.java 
+b)Multiply.java
 
 suppose in Demo.java we want to use AdvCal object 
 for that we need to import AdvCal class from tools package
 
+```java
 package db;  //Demo in db folder so that we need to mention
 import tools.AdvCal;  // without importing we can get error in creating object
 
@@ -2192,17 +2129,18 @@ class Demo{
     }
 }
 
---  there are many package provided by oracle. 
+```
+- there are many package provided by oracle. 
     e.g import java.util.ArrayList -- it means we are importing ArrayList class from java.util package here 
     java is main package and util is sub package inside main package and from this we can import ArrayList class.
     java is package and util is subpackage of java then from util package we can import ArrayLis.t 
    
--- by default we import java.lang.*; in every java file
+- by default we import java.lang.*; in every java file
 
--- when you create library then you need to create package and package should be unique name.
--- go to mvn repository
--- one way to building library reversing the domain name 
---  for google if i making package then com.google
+- when you create library then you need to create package and package should be unique name.
+- go to mvn repository
+- one way to building library reversing the domain name 
+- for google if i making package then com.google
 
 <br/>
 
@@ -2212,12 +2150,12 @@ class Demo{
 
 # 31. Packages , access modifier
 
-#1
+
 What is Access Modifiers ? Types of access Specifiers
--- Access Modifiers are keywords that determine the visibility and access level of a class,
+- Access Modifiers are keywords that determine the visibility and access level of a class,
 method, or data member. 
 
--- There are four types of access specifiers in Java: 
+- There are four types of access specifiers in Java: 
 
     i) public: A public class, method, or data member is visible to all classes. 
     ii) protected: A protected class, method, or data member can be accessed by classes within the same
@@ -2227,15 +2165,17 @@ method, or data member.
     iv) private: A private class, method, or data member is only visible to the class it is declared in, 
     and not to any subclasses.
 
-#2
+```java
 
 package flder1.folder1;
+
 // import flder1.folder2.B; --The type flder1.folder2.B is not visible because class is not public
 import flder1.folder2.C;
+
 public class A {
     
 public static  void main(String []args){
-// B obj=new B(); -- we was not making class B as public -- so we get error
+// B obj=new B(); // we was not making class B as public -- so we get error
 C obj =new C();  //since, Class C is public so we can use outside the package of folder2
 //for class visibility  only public is legal modifiers  has been used and if you not mention anything by default class is default.
    
@@ -2256,11 +2196,13 @@ public void natureProtected(){
 }
  
 /*
+```
 step 1:  create a folder  flder1
 Step 2:  create two sub folder inside flder1 i) folder1 ii)folder2 
 step 3:   create A.java file in folder1
 step 4:  create B.java, C.java in folder2
 
+```java
 package flder1.folder2;
  class B { 
 }
@@ -2273,8 +2215,9 @@ public class C {
 }
  */
 
-Note : Remember visibility decrease  in order
-public--protected--default(but this keyword not mentioned like public and private)--private
+// Note : Remember visibility decrease  in order
+// public--protected--default(but this keyword not mentioned like public and private)--private
+```
 
 <br/>
 
